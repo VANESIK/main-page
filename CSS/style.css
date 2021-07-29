@@ -1,0 +1,609 @@
+@import url("normalize.css");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+
+
+@media screen and (max-width: 1199px){
+
+.container{max-width: 752px;}
+}
+
+body{background-color: #FAFAF9}
+
+
+*{box-sizing: border-box;}
+
+header {background-color: #2E2E2E;
+font-family: Roboto, sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+/*line-height: 62px;*/
+color: #FFFFFF;
+display: flex;
+align-items: center;
+justify-content: space-between;
+position: fixed;
+top:0;
+width:100%;
+z-index: 99;
+}
+.logo img {margin-left: 16px;
+display:block;}
+header nav {all:unset;
+	/*padding-top: 40px;*/
+	/*line-height: 62px;*/
+}
+header ul {all:unset; 
+text-align: center;}
+header li{all:unset; 
+	color:white;
+margin-right:0px;}
+header button{all:unset;
+cursor:pointer;}
+.number {color:white;}
+.placeholder { margin-left: 8px;}
+.placeholder img{display: block;}
+.searchAndBasket {margin-right: 16px;}
+.searchAndBasket button {margin-left: 8px;}
+.MenuBurger {margin-right: 16px; 
+margin-left:24px;
+margin-top: 4.5px;
+}
+.MenuBurger img {display:block;}
+
+
+
+
+
+
+@media screen and (min-width: 1200px){
+	.MenuBurger {display: none;}
+
+.ReklamaBanner {}
+
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1199px){
+	.contacts {display: none;}
+	header nav {display: none;}
+	.logo {display:inline-block;
+		vertical-align: bottom;}
+	.logo img{width: 283px;
+		height:44px;}
+	header{display:block;}
+	.searchAndBasket {float:right;}
+	.MenuBurger {float:right;}
+	.search{width:27px; height:30px;}
+	.basket{width:30px; height:37px;}
+	.ReklamaBanner {
+	width: 100px;
+	height:500px;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 575px){
+	.searchAndBasket {display:none;}
+	 .logo img{width: 155px;
+		height:27px;}
+		.MenuBurger img {width:20px; 
+			height:20px;}
+			.MenuBurger{margin-top:2.5px;
+				margin-left:0px;}
+}
+
+
+
+
+
+
+.banners {background-image: url("../img/Reklama_banner.png");
+background-size: cover;
+background-position: center center;
+margin-top:61px; }
+
+
+
+
+.nextLeft, .nextRight{all:unset; 
+	cursor: pointer;}
+
+
+.ReklamaBanner {all:unset;
+	width: 900px;
+	height:800px;
+cursor: pointer;}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1199px){
+	.ReklamaBanner {
+	width: 500px;
+	height:400px;}
+	.banners {margin-top:44px;}
+	.nextLeft img,.nextRight img  {width:21px;
+		height:39px;}
+}
+
+
+
+
+
+@media screen and (max-width:767px){
+	.ReklamaBanner {
+	width: 300px;
+	height:330px;}
+}
+
+@media screen and (max-width: 575px){
+	.banners {margin-top:27px;}
+}
+
+
+
+
+
+
+
+
+
+
+.BannersContent {display:flex; 
+  justify-content: space-between;
+align-items: center;
+}
+
+
+
+.perekluchateli {text-align: center;}
+
+
+.perekluchateli input {margin-right: 10px;
+cursor: pointer;
+margin-bottom: 15px;}
+
+
+
+[name="banner"]:after {
+         box-sizing: border-box;
+        width: 20px;
+        height: 20px;
+        border-radius: 15px;
+        top: -2px;
+        left: -1px;
+        position: relative;
+        background-color: white;
+        display: inline-block;
+        visibility: visible;
+        border: 4px solid black;
+        content: '';
+
+    }
+
+    [name="banner"]:checked:after {
+        box-sizing: border-box;
+        width: 15px;
+        height: 15px;
+        border-radius: 15px;
+        top: -2px;
+        left: -1px;
+        position: relative;
+        background-color: black;       
+        display: inline-block;
+        visibility: visible;
+        border: 10px solid black;
+        content: '';
+
+    }
+
+
+
+    @media screen and (max-width:1199px){
+    	[name="banner"]:after {
+    		width: 15px;
+        height: 15px;
+        border: 2.5px solid black;
+    	}
+    	[name="banner"]:checked:after {
+    		width: 15px;
+        height: 15px;
+        border: 2.5px solid black;
+    	}
+    } 
+
+
+
+
+.Razdel .Persons  {display: flex;
+justify-content: space-between;
+flex-wrap: wrap;}
+
+.Razdel h1 {/*all:unset;*/
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 48px;
+line-height: 50px;
+color: #000000;
+/*display:inline;*/
+margin-top: 59px;
+margin-bottom: 0px;
+text-align: center;
+}
+
+
+
+.man, .woman, .girl  {/*max-*/
+
+
+border: 1px solid rgb(0, 0, 0, 0.34);
+position:relative;
+height:424px;
+width:313px;
+background-size: auto 100%;
+background-clip: padding-box;
+margin-top: 59px;
+cursor:pointer;
+}
+
+
+ .girl:hover{
+	background-size: auto 120%;
+	transition:3s;
+
+}
+ .man:hover{
+	background-size: auto 120%;
+	transition:3s;
+
+}
+ .woman:hover{
+	background-size: auto 120%;
+	transition:3s;
+
+}
+
+
+.man{background-image: url(../img/Persons/idbh04-9mf_1.jpg);
+
+}
+.woman{background-image: url(../img/Persons/982b6cbb40461bcc70f79210494bd3b3.jpg);
+
+background-position: 40%;
+}
+
+
+.girl{background-image: url(../img/Persons/185b81510cb7d0559cef3a9ebca48140.jpg);
+
+/*background-position: 40%;*/
+}
+
+.LongGirl {background-image: url(../img/Persons/long_girl.png);
+border: 1px solid rgb(0, 0, 0, 0.34);
+position:relative;
+height:313px;
+width:1168px;
+background-size: auto 313px;
+background-clip: padding-box;
+margin-top: 59px;
+display:none;
+background-position: center;
+cursor:pointer;}
+
+
+ .LongGirl:hover{
+	background-size: auto 120%;
+	transition:3s;
+
+}
+
+
+.Mugchina, .Ghenshinam, .Detyam {font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 48px;
+line-height: 70px;
+color: #000000;
+background-color: rgba(255,255,255, 0.77);
+/*display:inline;*/
+position: absolute;
+bottom:0;
+text-align: center;
+width:100%;}
+
+
+
+@media screen and (max-width: 1199px){
+	.LongGirl{display:block;}
+	.girl{display:none;}
+
+	.man, .woman {width:331px;}
+	.man{background-image: url(../img/Persons/man1200-px.png);}
+	.Razdel h1{ font-size: 36px; }
+}
+
+
+
+@media screen and (max-width: 767px){
+	.man, .woman {width:260px;
+		height: 337px;
+		background-size: auto 337px;
+		margin-top: 19px;}
+		.LongGirl{height: 236px;
+			background-size: auto 236px;
+			margin-top: 19px;}
+			.Razdel h1{ font-size: 24px;
+			margin-top: 19px; }
+			.Mugchina, .Ghenshinam, .Detyam{font-size: 24px;}
+}
+
+@media screen and (max-width: 575px){
+	.Razdel .Persons{justify-content:space-around;}
+	.LongGirl{ display:none;}
+	.girl{display: block;
+	width:250px;
+		height: 337px;
+		background-size: auto 337px;
+		margin-top: 19px;
+	/*background-image: url(../img/Persons/man1200-px.png);*/}
+	.man, .woman {width:250px;}
+}
+
+
+
+.GreyLine {height:3px;
+background-color: #CCCCCA;
+margin-top: 60px;}
+
+
+.ShoesZagolovok{font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+line-height: 42px;
+color: #000000;
+text-align: center;
+display:block;
+padding-left:50px;
+/*border-left: 40px transparent;
+box-sizing: border-box;*/}
+/*.ShoesZagolovok button {all:unset;
+cursor: pointer;}
+.ShoesZagolovok button:focus{
+	border-bottom: 3px solid black;
+}*/
+.ShoesZagolovok input{cursor:pointer;}
+
+[value="Popular"]:after {
+         /*box-sizing: border-box;
+        width: 20px;
+        height: 20px;       
+       display: inline-block;
+        visibility: visible;
+        */
+        content: 'Популярное';
+        background-color: #FAFAF9;
+        position: relative;
+         top: -20px;
+        left: -190px;
+
+    }
+
+
+
+
+
+
+    [value="Popular"]:checked:after {
+        content: 'Популярное';
+        background-color: #FAFAF9;
+        position: relative;
+         top: -20px;
+        left: -190px;
+        border-bottom: 3px solid black;
+
+    }
+
+
+    [value="New"]:after {
+         /*box-sizing: border-box;
+        width: 20px;
+        height: 20px;       
+       display: inline-block;
+        visibility: visible;
+        */
+        content: 'Новое';
+        background-color: #FAFAF9;
+        position: relative;
+         top: -20px;
+        left: -2px;
+
+    }
+
+
+  [value="New"]:checked:after {
+         content: 'Новое';
+        background-color: #FAFAF9;
+        position: relative;
+         top: -20px;
+        left: -2px;
+        border-bottom: 3px solid black;
+
+    }
+
+
+    @media screen and (max-width: 767px){
+    
+    	.ShoesZagolovok{font-size: 18px;}
+    	 
+    	 [value="Popular"]:after {
+         top: -3px;
+        left: -85px;}
+        [value="Popular"]:checked:after {
+         top: -3px;
+        left: -85px;}
+        [value="New"]:after {
+         top: -3px;
+        left: -5px;}
+        [value="New"]:checked:after {
+         top: -3px;
+        left: -5px;}
+    }
+		
+
+		.RowOfShoes1200, .RowOfShoes768-1199, .RowOfShoes576-767, .RowOfShoes0-575  {display: flex;
+			justify-content: space-between;
+			align-items: center;}
+			.RowOfShoes1200 button, .RowOfShoes768-1199 button, .RowOfShoes576-767 button, .RowOfShoes0-575 button {all:unset;
+				cursor:pointer;
+			}
+
+
+				.ShoesSellZagolovok {font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+line-height: 42px;
+
+color: #000000;
+text-align: center;}
+
+
+
+
+	@media screen and (min-width: 1200px){
+		.RowOfShoes768-1199, .RowOfShoes576-767,.RowOfShoes0-575{display:none;}
+	}
+
+	@media screen and (max-width: 1199px){
+		.RowOfShoes1200, .RowOfShoes576-767,.RowOfShoes0-575{display:none;}
+		.RowOfShoes768-1199{display:flex;}
+	}
+
+	@media screen and (max-width: 767px){
+		.RowOfShoes1200, .RowOfShoes768-1199,.RowOfShoes0-575{display:none;}
+		.RowOfShoes576-767{display:flex;}
+		.ShoesSellZagolovok {font-size: 18px;}
+	}
+
+	@media screen and (max-width: 575px){
+		.RowOfShoes1200, .RowOfShoes768-1199, .RowOfShoes576-767{display:none;}
+		.RowOfShoes0-575{display:flex;}
+	}
+
+.WeAreHere {font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+line-height: 42px;
+
+color: #000000;
+text-align: center;}
+
+
+	@media screen and (max-width: 767px){
+		.WeAreHere {font-size: 18px;}
+	}
+
+	.InstaPhoto {display:flex;
+		justify-content: space-between;
+		flex-wrap: wrap;}
+
+
+
+
+
+	/*.InstaPhoto img {display: block;
+		width:343px;
+		transition:1.5s;
+		}
+
+.InstaPhoto img:hover {width: 370px;
+		 }*/
+.OneInst {background-image: url(../img/inst/image1.png);}
+.TwoInst {background-image: url(../img/inst/image2.png);}
+.ThreeInst {background-image: url(../img/inst/image3.png);}
+.FourInst {background-image: url(../img/inst/image4.png);}
+.FiveInst {background-image: url(../img/inst/image5.png);}
+.SixInst {background-image: url(../img/inst/image6.png);}
+.SevenInst {background-image: url(../img/inst/image7.png);}
+.EightInst {background-image: url(../img/inst/image8.png);}
+.NineInst {background-image: url(../img/inst/image9.png);}
+
+	.InstaPhoto div{width:343px;
+		height: 343px;
+		background-size: 100% 100%;;
+cursor:pointer;
+margin-top:57px;
+}
+
+
+		.InstaPhoto div:hover{
+			/*background-position: center center;*/
+			background-size: 120% 120%;
+			transition:3s;
+			
+		}
+
+
+
+
+
+
+
+	@media screen and (max-width: 1199px){
+		.InstaPhoto div {height:215.5px;
+		width:215.5px;
+		}
+		.InstaPhoto div{margin-top:36px;}
+		/*.InstaPhoto img:hover {width: 230px;
+		 }*/
+	}
+
+
+
+	@media screen and (max-width: 767px){
+.InstaPhoto div {height:165.5px;
+		width:165.5px;
+		}
+		.InstaPhoto div{margin-top:27px;}
+			/*.InstaPhoto img:hover {width: 180px;
+		 }*/
+	}
+
+
+	@media screen and (max-width: 575px){
+		.InstaPhoto {justify-content: space-around;}
+	}
+
+
+	
+
+
+	footer {margin-top: 50px;
+		height: 200px;
+		background-color:#2E2E2E;}
